@@ -1,16 +1,14 @@
-import 'dart:math';
-
 bool function(int number) {
   int sum = 0;
-  while (number > 0) {
-    int digit = number % 10;
-    sum += pow(digit, number.toString().length).toInt();
-    number ~/= 10;
+  for (int i = 0; i < number.toString().length; i++) {
+    sum += int.parse(number.toString()[i]) *
+        int.parse(number.toString()[i]) *
+        int.parse(number.toString()[i]);
   }
   return sum == number;
 }
 
 void main() {
-  int number = 153;
+  int number = 370;
   print(function(number));
 }
