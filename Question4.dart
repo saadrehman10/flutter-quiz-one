@@ -1,6 +1,6 @@
 void main() {
   int row = 5;
-  for (int i = row - 1; i >= 0; i--) {
+  for (int i = row; i >= 0; i--) {
     String temp = '';
     for (int j = row - 1; j >= i; j--) {
       temp += ' ';
