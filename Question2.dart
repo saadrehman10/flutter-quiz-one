@@ -1,6 +1,6 @@
 import 'dart:math';
 
-bool isArmstrong(int number) {
+bool function(int number) {
   int originalNumber = number;
   int numDigits = number.toString().length;
   int sum = 0;
@@ -15,6 +15,6 @@ bool isArmstrong(int number) {
 }
 
 void main() {
-
-  
+  int number = 153;
+  print(function(number));
 }
